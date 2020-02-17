@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name= "org.automate.batchstatus.feedsEta" table="ms_transfer_file">
+         <composite-id name="PK_MS_TRANSFER_FILE">
+            <key-property name="DATA_FL_NM" column="DATA_FL_NM" />
+            <key-property name="PRTN_ID" column="PRTN_ID" />        </composite-id>
+
+        <property name="FL_ID" type="int" column ="FL_ID" length="5" not-null="false" />
+		<property name="TRNSF_TYP_CD" type="string" column ="TRNSF_TYP_CD" length="3" not-null="false" />
+        <property name="STRT_DTTM" type="timestamp" column ="STRT_DTTM" length="6" not-null="false" />
+        <property name="END_DTTM" type="timestamp" column ="END_DTTM" length="6" not-null="false" />
+        <property name="AUD_NM" type="string" column ="AUD_NM" length="100" not-null="false" />
+        <property name="STS_CD" type="string" column ="STS_CD" length="1" not-null="false" />
+        <property name="FTP_HST_NM" type="string" column ="FTP_HST_NM" length="50" not-null="false" />
+        <property name="TRNSF_ATMPT_CNT" type="int" column ="TRNSF_ATMPT_CNT" length="2" not-null="false" />
+        <property name="DATA_BYTE_NBR" type="int" column ="DATA_BYTE_NBR" length="15" not-null="false" />
+        <property name="AUD_BYTE_NBR" type="int" column ="AUD_BYTE_NBR" length="15" not-null="false" />
+       
+        <property name="CREAT_BY_NM" type="string" column ="CREAT_BY_NM" length="30" not-null="true" />
+        <property name="CREAT_DTTM" type="timestamp" column ="CREAT_DTTM" length="6" not-null="true" />
+        <property name="UPDT_BY_NM" type="string" column ="UPDT_BY_NM" length="30" not-null="false" />
+        <property name="UPDT_DTTM" type="timestamp" column ="UPDT_DTTM" length="6" not-null="false" />
+        <property name="RMOT_DIR_NM" type="string" column ="RMOT_DIR_NM" length="200" not-null="false" />
+        <property name="RMOT_DATA_FL_NM" type="string" column ="RMOT_DATA_FL_NM" length="200" not-null="false" />
+        <property name="RMOT_AUD_FL_NM" type="string" column ="RMOT_AUD_FL_NM" length="200" not-null="false" />
+        <property name="RMOT_TRIG_FL_NM" type="string" column ="RMOT_TRIG_FL_NM" length="200" not-null="false" />
+
+
+    </class>
+
+</hibernate-mapping>

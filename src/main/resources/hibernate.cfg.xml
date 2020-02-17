@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@//ep02:1521/mdspr02svc.uhc.com</property>
+        <property name="hibernate.connection.username">UHG_001504675</property>
+        <property name="hibernate.connection.password">VXht8*vw</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect</property>
+        <property name="hibernate.default_schema">SPP23_OWNER</property>
+        <property name="show_sql">true</property>
+        <mapping resource="frameworkBS.hbm.xml"></mapping>
+        <mapping resource="cycleDate.hbm.xml"></mapping>
+        <mapping resource="cycleDate.hbm.xml"></mapping>
+        <mapping resource="feedsEta.hbm.xml"></mapping>
+    </session-factory>
+</hibernate-configuration>

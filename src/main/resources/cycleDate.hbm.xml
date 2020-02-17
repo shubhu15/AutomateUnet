@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name= "org.automate.batchstatus.cycleDate" table="ms_parameter">
+
+        <id column="ROWID" type="string" />
+        <property name="PARM_NM" type="string" column ="PARM_NM" length="10" not-null="false" />
+        <property name="CATGY_CD" type="string" column ="CATGY_CD" length="50" not-null="false" />
+        <property name="UPDT_DTTM" type="timestamp" column ="UPDT_DTTM" length="6" not-null="false" />
+        <property name="CREAT_DTTM" type="timestamp" column ="CREAT_DTTM" length="6" not-null="false" />
+        <property name="PARM_DESC" type="string" column ="PARM_DESC" length="1" not-null="false" />
+        <property name="CURR_VAL" type="string" column ="CURR_VAL" length="10" not-null="false" />
+        <property name="CREAT_BY_NM" type="string" column ="CREAT_BY_NM" length="30" not-null="true" />
+        <property name="UPDT_BY_NM" type="string" column ="UPDT_BY_NM" length="30" not-null="true" />
+
+    </class>
+
+</hibernate-mapping>
